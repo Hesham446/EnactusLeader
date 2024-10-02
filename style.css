@@ -1,0 +1,174 @@
+/* styles.css */
+body {
+    background-color: #003537; /* Dark teal background */
+    color: #FCC222; /* Gold color for text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px; /* Adjust as necessary */
+}
+
+.login-btn, .logout-btn, .submit-btn {
+    background-color: #01CFD7; /* Bright blue button */
+    color: #003537; /* Dark teal text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.login-btn:hover, .logout-btn:hover, .submit-btn:hover {
+    background-color: #FCC222; /* Change to gold on hover */
+}
+
+.login-container, .admin-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #515356; /* Gray background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    text-align: center;
+    color: #01CFD7; /* Bright blue for the title */
+    font-size: 2.5em; /* Increased title size */
+}
+
+.admin-form {
+    background-color: #424B4D; /* Slightly darker gray for forms */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="number"],
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #01CFD7; /* Bright blue border for inputs */
+    border-radius: 5px;
+    background-color: #515356; /* Match input background with container */
+    color: #FCC222; /* Gold text in inputs */
+    transition: border-color 0.3s ease; /* Transition effect */
+}
+
+.admin-form input[type="text"]:focus,
+.admin-form input[type="number"]:focus,
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #FCC222; /* Gold border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.leaderboard-container {
+    max-width: 10000px;
+    margin: 20px auto;
+    background-color: #515356; /* Gray background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: separate; /* Use separate borders for better styling */
+    border-spacing: 0; /* Remove spacing between cells */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 15px;
+    text-align: left;
+    background-color: #515356; /* Darker background for cells */
+}
+
+.leaderboard-table th {
+    background-color: #01CFD7; /* Bright blue for the header */
+    color: #003537; /* Dark teal for header text */
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: #424B4D; /* Slightly lighter for alternate rows */
+}
+
+.leaderboard-table tr:hover {
+    background-color: #01CFD7; /* Highlight row on hover */
+    color: #003537; /* Change text color on hover */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #FCC222; /* Gold color for footer */
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #003537; /* Dark teal background */
+    color: #FCC222; /* Gold text */
+}
+
+.loader {
+    border: 8px solid #01CFD7; /* Bright blue border */
+    border-top: 8px solid #FCC222; /* Gold top border */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.admin-container {
+    max-width: 800px; /* Increase width to 800px */
+    margin: 50px auto;
+    background-color: #515356; /* Gray background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard-table {
+    width: 100%; /* Keep it full width */
+    border-collapse: separate; /* Use separate borders for better styling */
+    border-spacing: 0; /* Remove spacing between cells */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+}
+.delete-icon {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.leaderboard-table td button {
+    background: none; /* Remove button background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
