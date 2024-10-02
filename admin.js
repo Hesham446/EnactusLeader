@@ -20,7 +20,7 @@ function renderLeaderboard() {
             <td>
                 <button onclick="editMember(${index})">Edit</button>
                 <button onclick="deleteMember(${index})" title="Delete Member">
-                    <img src="icotrash-can-icon-3.png" alt="Delete" style="width: 20px; height: 20px;">
+                    <img src="trash-can-icon-3.png" alt="Delete" style="width: 20px; height: 20px;">
                 </button>
             </td>
         `;
