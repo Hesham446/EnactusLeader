@@ -1,4 +1,4 @@
-/* styles.css */
+/* General Styles */
 body {
     background-color: #003537; /* Dark teal background */
     color: #FCC222; /* Gold color for text */
@@ -7,6 +7,7 @@ body {
     padding: 20px;
 }
 
+/* Header Styles */
 .header {
     display: flex;
     align-items: center;
@@ -32,6 +33,7 @@ body {
     background-color: #FCC222; /* Change to gold on hover */
 }
 
+/* Login and Admin Container */
 .login-container, .admin-container {
     max-width: 400px;
     margin: 50px auto;
@@ -41,12 +43,14 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Title Styles */
 .title {
     text-align: center;
     color: #01CFD7; /* Bright blue for the title */
     font-size: 2.5em; /* Increased title size */
 }
 
+/* Form Styles */
 .admin-form {
     background-color: #424B4D; /* Slightly darker gray for forms */
     padding: 20px;
@@ -76,8 +80,9 @@ body {
     outline: none; /* Remove default outline */
 }
 
+/* Leaderboard Styles */
 .leaderboard-container {
-    max-width: 10000px;
+    max-width: 100%;
     margin: 20px auto;
     background-color: #515356; /* Gray background for the container */
     padding: 30px;
@@ -115,12 +120,14 @@ body {
     color: #003537; /* Change text color on hover */
 }
 
+/* Footer Styles */
 .footer {
     text-align: center;
     margin-top: 20px;
     color: #FCC222; /* Gold color for footer */
 }
 
+/* Loader Styles */
 .loading-container {
     display: flex;
     flex-direction: column;
@@ -144,23 +151,8 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.admin-container {
-    max-width: 800px; /* Increase width to 800px */
-    margin: 50px auto;
-    background-color: #515356; /* Gray background for the container */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
 
-.leaderboard-table {
-    width: 100%; /* Keep it full width */
-    border-collapse: separate; /* Use separate borders for better styling */
-    border-spacing: 0; /* Remove spacing between cells */
-    border-radius: 10px; /* Rounded corners for the table */
-    overflow: hidden; /* Ensure rounded corners are visible */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the table */
-}
+/* Trash Icon */
 .delete-icon {
     width: 60px; /* Adjust size as needed */
     height: 60px; /* Maintain aspect ratio */
@@ -171,4 +163,87 @@ body {
     background: none; /* Remove button background */
     border: none; /* Remove border */
     cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive Styles */
+
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 80px; /* Scale down the logo */
+    }
+
+    .login-btn, .logout-btn, .submit-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .leaderboard-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .title {
+        font-size: 1.8em; /* Adjust title size */
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 10px; /* Reduce cell padding */
+    }
+
+    .login-container, .admin-container {
+        max-width: 300px; /* Smaller containers for mobile */
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .admin-form input[type="text"],
+    .admin-form input[type="number"],
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        padding: 10px;
+    }
+}
+
+/* For very small screens (width of 480px or less) */
+@media (max-width: 480px) {
+    .logo {
+        width: 60px; /* Further scale down the logo */
+    }
+
+    .login-btn, .logout-btn, .submit-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .leaderboard-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5em; /* Further reduce title size */
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 8px;
+    }
+
+    .login-container, .admin-container {
+        max-width: 280px; /* Smaller containers */
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .admin-form input[type="text"],
+    .admin-form input[type="number"],
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        padding: 8px;
+    }
 }
