@@ -88,6 +88,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
 }
 
 .leaderboard-table {
@@ -185,15 +186,17 @@ body {
 
     .leaderboard-container {
         padding: 15px; /* Reduce padding for smaller screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
     }
 
-    .title {
-        font-size: 1.8em; /* Adjust title size */
+    .leaderboard-table {
+        width: 100%; /* Make table full width */
     }
 
     .leaderboard-table th,
     .leaderboard-table td {
         padding: 10px; /* Reduce cell padding */
+        font-size: 12px; /* Smaller font for mobile */
     }
 
     .login-container, .admin-container {
@@ -223,15 +226,21 @@ body {
 
     .leaderboard-container {
         padding: 10px;
+        overflow-x: auto; /* Enable horizontal scrolling */
     }
 
     .title {
         font-size: 1.5em; /* Further reduce title size */
     }
 
+    .leaderboard-table {
+        width: 100%; /* Ensure table doesn't overflow on small screens */
+        font-size: 10px; /* Reduce table font size */
+    }
+
     .leaderboard-table th,
     .leaderboard-table td {
-        padding: 8px;
+        padding: 8px; /* Further reduce cell padding */
     }
 
     .login-container, .admin-container {
